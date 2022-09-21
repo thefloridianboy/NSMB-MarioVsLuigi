@@ -42,6 +42,11 @@ public class LoopingMusic : MonoBehaviour {
         audioSource.time = 0;
         audioSource.Play();
     }
+    public void Play(bool reset) {
+        if (reset)
+            audioSource.time = 0;
+        audioSource.Play();
+    }
     public void Stop() {
         audioSource.Stop();
     }

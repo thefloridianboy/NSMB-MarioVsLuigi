@@ -214,7 +214,7 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
     #region Unity Methods
     public void Awake() {
         cameraController = GetComponent<CameraController>();
-        cameraController.IsControllingCamera = photonView.IsMineOrLocal();
+        //cameraController.IsControllingCamera = photonView.IsMineOrLocal();
 
         animator = GetComponentInChildren<Animator>();
         body = GetComponent<Rigidbody2D>();
